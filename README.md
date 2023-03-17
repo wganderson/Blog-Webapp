@@ -6,6 +6,8 @@ We designed some UML models to assist design and communicate the functionality o
 ### Use Case Diagram ###
 ![image](https://user-images.githubusercontent.com/114177995/226065871-7609b241-130a-4881-8365-36aa4b2e2ab6.png)
 
+The use case diagram was primarily used for prototyping, functions such as 'notify creator/subscriber' were not implemented for example.
+
 ### Component Diagram ###
 ![image](https://user-images.githubusercontent.com/114177995/226065482-9d817eb6-bb73-4d6e-ba64-0788c3c8ba17.png)
 
