@@ -22,6 +22,19 @@ Helper - The Helper Component is used to pass between the other components in th
 ### Sequence Diagrams ### 
 ![image](https://user-images.githubusercontent.com/114177995/226065559-c3808c30-01f8-4395-a72a-4f1e795ee532.png)
 ![image](https://user-images.githubusercontent.com/114177995/226065700-8e6017d3-cfdd-4742-8ce3-7162b6ae9e36.png)
+Sequence Diagram
+Login Sequence Diagram 1
+* We start at index.html, which is the login page where the user can enter 2 parameters, username and password.
+* These parameters are then passed to the business layer which handles the Persistence layer.
+* Eventually, the user which corresponds to the information entered in index.html is returned to Login.java.
+* Based on if this user exists or not, the request is forwarded to one of two pages.
+* Login sequence complete
+
+Login Sequence Diagram 2
+* Starting off from the UserHomePage.jsp, which is where the login sequence diagram leads if the information was entered correctly, the user chooses to browse the site for new content.
+* We then find ourselves at DiscoverPage.jsp, which must list out all the users on the site. In order to retrieve the relevant user information, we utilize the * Business(and then Persistence) layer once again to retrieve information from our database.
+* Once the user has selected a blog page they would like to look at, they are redirected to Blog.jsp. On this page we must also list all the relevant post information, we utilize the Business(and then Persistence) layer once again to retrieve information from our database.
+* The user has now successfully browsed the site for a blog.
 
 
 ## Database ##
