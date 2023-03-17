@@ -61,7 +61,7 @@ We used mysql to create a simple database to store user and post information, th
 ![image](https://user-images.githubusercontent.com/114177995/226065609-d0132cd8-d2de-4e3d-a68c-00761abd4757.png)
 
 SQL to create tables:
-
+'''
 CREATE TABLE Creator (
 username VARCHAR(50),
 password VARCHAR(50),
@@ -97,3 +97,4 @@ FOREIGN KEY (creatorid) REFERENCES Creator (id),
 FOREIGN KEY (postid) REFERENCES Post (id),
 PRIMARY KEY (postid, creatorid)
 );
+'''
