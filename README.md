@@ -22,7 +22,7 @@ Helper - The Helper Component is used to pass between the other components in th
 ### Sequence Diagrams ### 
 ![image](https://user-images.githubusercontent.com/114177995/226065559-c3808c30-01f8-4395-a72a-4f1e795ee532.png)
 ![image](https://user-images.githubusercontent.com/114177995/226065700-8e6017d3-cfdd-4742-8ce3-7162b6ae9e36.png)
-Sequence Diagram
+
 Login Sequence Diagram 1
 * We start at index.html, which is the login page where the user can enter 2 parameters, username and password.
 * These parameters are then passed to the business layer which handles the Persistence layer.
