@@ -56,7 +56,7 @@ Login Sequence Diagram 2
 
 
 ## Database ##
-We used mysql to create a simple database to store user and post information, this diagram may not refelct the final state of the database.
+We used mysql to create a simple database to store user and post information, this diagram may not refelct the final state of the database. For example, images are not a seperate table.
 
 ![image](https://user-images.githubusercontent.com/114177995/226065609-d0132cd8-d2de-4e3d-a68c-00761abd4757.png)
 
