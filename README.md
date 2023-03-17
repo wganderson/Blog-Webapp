@@ -8,6 +8,22 @@ We designed some UML models to assist design and communicate the functionality o
 
 The use case diagram was primarily used for prototyping, functions such as 'notify creator/subscriber' were not implemented for example.
 
+Use Case Descriptions
+* Engage with post
+    * While browsing the blogs and content on the site the user should have the option to interact with the content in some way. This takes the form of like/react/share/comment/etc. The Creator of said post is notified based on their specific user settings, for example by default a post, the creator will be notified for a comment, but not for a like.
+
+* Create/Edit post
+    * This use case is probably the most important one for the creator user. It allows them to publish content on the site. This use case is the precursor to any change the creator makes to the content they have put on the site. These changes can take the form of deletion/creation/edit and more. This use case will be implemented in the form of a powerful user interface that will allow the user to make nearly any change they would want to make.
+
+* Update Blog Status
+    * This use case is more of a back-end kind of use case, however, it is something that has large implications on the project. The status is updated any time a user interacts with it or a creator makes a change or content update of some kind. A central function of this use case is to manage notifications, since many users may need to receive notifications depending on the kind of update being pushed.
+
+* Log in
+    * Standard in many kinds of modern web apps and websites. In order to do user-specific tasks, the user is required to log in. A creator is required to log in in order to perform any task on the site. A consumer is only required to log in when they want to interact with a post, subscribe, or do anything else that isn’t passively viewing content on the site.
+
+* Browse Drafts
+    * As part of our content creation tools, we want creators to be able to save their progress when working on content for the site. This use case allows a creator to access their saved work. Most of the time when a creator would utilize this feature it would end up going into the Create/Edit post-use case. However, a user may choose only to view their saved work, which is why it is classified as an extended relationship in the use case diagram.
+
 ### Component Diagram ###
 ![image](https://user-images.githubusercontent.com/114177995/226065482-9d817eb6-bb73-4d6e-ba64-0788c3c8ba17.png)
 
