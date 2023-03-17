@@ -59,3 +59,41 @@ Login Sequence Diagram 2
 We used mysql to create a simple database to store user and post information, this diagram may not refelct the final state of the database.
 
 ![image](https://user-images.githubusercontent.com/114177995/226065609-d0132cd8-d2de-4e3d-a68c-00761abd4757.png)
+
+SQL to create tables:
+
+CREATE TABLE Creator (
+username VARCHAR(50),
+password VARCHAR(50),
+postcount INT NOT NULL,
+subscribercount INT NOT NULL,
+id INT NOT NULL AUTO_INCREMENT,
+PRIMARY KEY(id),
+UNIQUE (username)
+);
+
+CREATE TABLE Subscriptions (
+username VARCHAR(50),
+creatorid INT NOT NULL,
+FOREIGN KEY (creatorid) REFERENCES Creator (id),
+PRIMARY KEY (creatorid)
+);
+
+
+CREATE TABLE Post(
+title VARCHAR(250),
+datecreated DATE,
+id INT NOT NULL AUTO_INCREMENT,
+type VARCHAR(10),
+body VARCHAR(5000),
+image TEXT,
+PRIMARY KEY(id)
+);
+
+CREATE TABLE CreatorWritesPost(
+creatorid INT,
+postid INT,
+FOREIGN KEY (creatorid) REFERENCES Creator (id),
+FOREIGN KEY (postid) REFERENCES Post (id),
+PRIMARY KEY (postid, creatorid)
+);
