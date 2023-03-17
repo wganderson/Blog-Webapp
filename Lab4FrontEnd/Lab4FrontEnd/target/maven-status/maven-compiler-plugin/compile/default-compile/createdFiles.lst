@@ -1,0 +1,12 @@
+ryerson/ca/lab4helper/PostXML.class
+ryerson/ca/lab4tester/Main.class
+ryerson/ca/lab4frontend/Browse.class
+ryerson/ca/lab4frontend/BrowseUser.class
+ryerson/ca/lab4helper/UserXML.class
+ryerson/ca/lab4business/XMLParser.class
+ryerson/ca/lab4helper/PostInfo.class
+ryerson/ca/lab4business/Business.class
+ryerson/ca/lab4frontend/Subscribe.class
+ryerson/ca/lab4helper/UserInfo.class
+ryerson/ca/lab4frontend/FrontEnd.class
+ryerson/ca/lab4frontend/Authenticate.class
